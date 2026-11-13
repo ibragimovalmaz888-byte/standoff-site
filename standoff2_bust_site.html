@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090b14">
+<meta name="description" content="Standoff 2 Bust — услуги совместной игры, тренировки и помощи с рангом.">
+<title>Standoff 2 | Bust</title>
+<style>
+:root{--bg:#080a12;--panel:#111522;--panel2:#171d2d;--line:#29334b;--purple:#9b5cff;--cyan:#39d9ff;--text:#f5f7ff;--muted:#aab2c5;--gold:#ffd166}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#24133f 0,transparent 36%),var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#090b12eF;backdrop-filter:blur(12px);border-bottom:1px solid #283047}
+.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:1000;letter-spacing:1px;font-size:19px}.brand span{color:var(--cyan);text-shadow:0 0 15px #39d9ff88}
+nav{display:flex;gap:20px;color:var(--muted);font-size:14px}nav a:hover{color:var(--cyan)}
+.hero{min-height:470px;display:flex;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(90deg,#080a12 4%,#080a12dd 48%,#080a1260 100%),url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--bg),transparent 35%);pointer-events:none}
+.hero-content{position:relative;z-index:1;padding:75px 0;max-width:650px}.tag{display:inline-block;border:1px solid #39d9ff66;background:#39d9ff12;color:var(--cyan);padding:8px 12px;border-radius:30px;font-size:12px;font-weight:bold;letter-spacing:1.5px}
+h1{font-size:clamp(42px,8vw,76px);line-height:.98;margin:22px 0 16px;font-weight:1000;letter-spacing:-2px}h1 span{color:var(--purple);text-shadow:0 0 25px #9b5cff88}
+.lead{color:#c2c9d8;line-height:1.7;max-width:510px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:10px;font-weight:800;font-size:14px;border:1px solid transparent;transition:.2s}
+.btn-main{background:linear-gradient(100deg,var(--purple),#5a7dff);box-shadow:0 8px 30px #8654ff40}.btn-main:hover{transform:translateY(-2px);filter:brightness(1.12)}
+.btn-ghost{border-color:#46516b;background:#101522cc}.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan)}
+section{padding:62px 0}.section-head{text-align:center;margin-bottom:28px}.eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.section-head h2{font-size:clamp(27px,5vw,38px);margin:10px 0}.section-head p{color:var(--muted);margin:0}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.feature{background:linear-gradient(145deg,#171d2d,#0f1320);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.feature img{width:100%;height:155px;object-fit:cover;display:block;filter:saturate(.85)}
+.feature-body{padding:18px}.feature h3{margin:0 0 9px}.feature p{color:var(--muted);font-size:14px;line-height:1.55;margin:0}
+.price-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:15px;background:#101522}
+table{border-collapse:collapse;width:100%;min-width:590px}th,td{padding:15px 17px;text-align:left;border-bottom:1px solid #252d40;font-size:14px}th{background:#191f30;color:var(--cyan);font-size:12px;text-transform:uppercase;letter-spacing:1px}tr:last-child td{border-bottom:0}td:nth-child(2){color:var(--gold);font-weight:800}td:nth-child(3){color:#7ce7ff;font-weight:800}.rank{font-weight:700}.note{font-size:13px;color:var(--muted);line-height:1.6;margin-top:14px}
+.gallery{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px}.gallery img{width:100%;height:210px;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+.order{background:linear-gradient(135deg,#21123b,#11182a 65%,#102432);border:1px solid #514076;border-radius:20px;padding:30px;text-align:center}.order h2{margin:0 0 10px;font-size:30px}.order p{color:#c2c9d8;line-height:1.6}.order .btn{margin-top:12px}
+footer{padding:25px 0;border-top:1px solid var(--line);color:#818ba1;font-size:12px;text-align:center;line-height:1.7}
+@media(max-width:760px){nav{gap:12px;font-size:12px}.feature-grid{grid-template-columns:1fr}.feature img{height:180px}.gallery{grid-template-columns:1fr 1fr}.gallery img:first-child{grid-column:1/-1;height:190px}.hero{min-height:440px}.hero-content{padding:60px 0}}
+@media(max-width:420px){.brand{font-size:15px}nav{gap:9px}.nav{min-height:60px}.btn{width:100%}.gallery{grid-template-columns:1fr 1fr}.gallery img{height:140px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#">STANDOFF 2 <span>| BUST</span></a>
+  <nav><a href="#services">Услуги</a><a href="#prices">Цены</a><a href="#contact">Заказ</a></nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap hero-content">
+  <div class="tag">STANDOFF 2 • RANK SUPPORT</div>
+  <h1>ПОДНИМИ<br><span>СВОЙ РАНГ</span></h1>
+  <p class="lead">Совместная игра, тренировки и помощь в развитии навыков. Выбирай услугу и удобный способ оплаты — голда или тенге.</p>
+  <div class="actions"><a class="btn btn-main" href="#prices">СМОТРЕТЬ ЦЕНЫ</a><a class="btn btn-ghost" href="#contact">СВЯЗАТЬСЯ</a></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Что предлагаем</div><h2>НАШИ УСЛУГИ</h2><p>Помощь без передачи пароля от аккаунта</p></div>
+  <div class="feature-grid">
+    <article class="feature"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80" alt="Игровая атмосфера"><div class="feature-body"><h3>⚡ DUO / Совместная игра</h3><p>Играем вместе в команде и помогаем улучшать результат.</p></div></article>
+    <article class="feature"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80" alt="Игровое оборудование"><div class="feature-body"><h3>🎯 Тренировка навыков</h3><p>Прицел, движение, позиции, гранаты и игровые решения.</p></div></article>
+    <article class="feature"><img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?auto=format&fit=crop&w=900&q=80" alt="Киберспортивная сцена"><div class="feature-body"><h3>🏆 Разбор игры</h3><p>Разбор ошибок и советы, чтобы увереннее играть матчи.</p></div></article>
+  </div>
+</div></section>
+
+<section id="prices"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Прайс-лист</div><h2>ЦЕНЫ НА РАНГИ</h2><p>Оплата на выбор: Gold или тенге (₸)</p></div>
+  <div class="price-wrap"><table>
+    <thead><tr><th>Повышение</th><th>Gold</th><th>Тенге</th></tr></thead>
+    <tbody>
+      <tr><td class="rank">Бронза I → Бронза II</td><td>10 G</td><td>100 ₸</td></tr>
+      <tr><td class="rank">Бронза II → Бронза III</td><td>15 G</td><td>150 ₸</td></tr>
+      <tr><td class="rank">Бронза III → Бронза IV</td><td>20 G</td><td>200 ₸</td></tr>
+      <tr><td class="rank">Сильвер I → Сильвер II</td><td>25 G</td><td>200 ₸</td></tr>
+      <tr><td class="rank">Сильвер II → Сильвер III</td><td>30 G</td><td>250 ₸</td></tr>
+      <tr><td class="rank">Сильвер III → Сильвер IV</td><td>35 G</td><td>300 ₸</td></tr>
+      <tr><td class="rank">Голд I → Голд II</td><td>40 G</td><td>300 ₸</td></tr>
+      <tr><td class="rank">Голд II → Голд III</td><td>43 G</td><td>350 ₸</td></tr>
+      <tr><td class="rank">Голд III → Голд IV</td><td>45 G</td><td>400 ₸</td></tr>
+      <tr><td class="rank">Феникс → Рейнджер</td><td>50 G</td><td>500 ₸</td></tr>
+      <tr><td class="rank">Рейнджер → Чемпион</td><td>55 G</td><td>550 ₸</td></tr>
+      <tr><td class="rank">Чемпион → Мастер</td><td>60 G</td><td>600 ₸</td></tr>
+      <tr><td class="rank">Мастер → Элита</td><td>70 G</td><td>700 ₸</td></tr>
+      <tr><td class="rank">Элита → Легенда</td><td>100 G</td><td>1 000 ₸</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">* Gold и тенге — альтернативные способы оплаты, их не нужно платить одновременно. Уточняй свободное время и условия заказа в Telegram.</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Атмосфера игры</div><h2>GAME ZONE</h2></div>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1000&q=85" alt="Игровой сетап">
+    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=85" alt="Киберспорт">
+    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=85" alt="Игровая атмосфера">
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="order">
+  <div class="eyebrow">Есть вопросы?</div><h2>ГОТОВ К ИГРЕ?</h2>
+  <p>Напиши в Telegram, чтобы обсудить заказ, доступность и способ оплаты.</p>
+  <a class="btn btn-main" href="https://t.me/Almaz1488" target="_blank" rel="noopener">НАПИСАТЬ В TELEGRAM</a>
+  <p class="note">Telegram: @Almaz1488 — проверь username перед публикацией.</p>
+</div></div></section>
+</main>
+<footer><div class="wrap">STANDOFF 2 | BUST © 2026<br>Неофициальный фан-сайт. Не связан с разработчиками Standoff 2.<br>Не отправляй пароль или коды подтверждения от аккаунта.</div></footer>
+</body>
+</html>
