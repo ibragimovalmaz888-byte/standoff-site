@@ -1,35 +1,4 @@
-index.html
 
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Standoff 2 | Bust</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;background:#080812;color:white;font-family:Arial}
-header{padding:22px;text-align:center;background:#111225;color:#54dcff;font-weight:bold;font-size:22px}
-.hero{text-align:center;padding:85px 15px;background:linear-gradient(#090918aa,#090918dd),url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200') center/cover}
-h1{font-size:42px;text-shadow:0 0 20px #a64dff}
-h1 span{color:#b76aff}
-p{color:#c2c2d8;line-height:1.6}
-button,.btn{background:linear-gradient(90deg,#933cff,#00bfff);border:0;color:white;padding:14px 22px;border-radius:9px;font-weight:bold;text-decoration:none;display:inline-block}
-section{padding:35px 15px;max-width:850px;margin:auto}
-h2{text-align:center;color:#b76aff}
-.card{background:#141629;border:1px solid #573b83;border-radius:12px;padding:17px;margin:12px 0}
-.price{color:#54dcff;font-weight:bold}
-table{width:100%;border-collapse:collapse;background:#141629}
-td,th{padding:13px 9px;border-bottom:1px solid #35354d;text-align:left;font-size:13px}
-th{color:#54dcff}
-td:nth-child(2){color:#ffd166}
-td:nth-child(3){color:#54dcff}
-.table{overflow-x:auto}
-footer{text-align:center;padding:25px;color:#888}
-</style>
-</head>
-<body>
-<header>STANDOFF 2 | BUST</header>
 
 <div class="hero">
 <h1>YOUR RANK.<br><span>YOUR POWER.</span></h1>
